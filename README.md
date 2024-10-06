@@ -1,10 +1,10 @@
 # Example Project Tutorial
 
-Welcome to the Example Project tutorial! This project demonstrates several key features and best practices for creating a SyftBox application. Throughout this tutorial, we'll explore various aspects of the project structure and functionality.
+Welcome to the Example Project tutorial! This project demonstrates several key features and best practices for creating a `SyftBox` application. Throughout this tutorial, we'll explore various aspects of the project structure and functionality.
 
 ## How to Customize This Project For Your Own Application
 
-First, begin reading through the "Project Overview", and this will end up taking
+First, begin reading through the ["Project Overview"](#project-overview), and this will end up taking
 you through all the various files and what they do. Then come back here. At that point, you'll likely want to customize your project in the following way:
 
 0. Change the name of the folder to be something other than "example_project". The app looks to this folder to know how to name itself.
@@ -22,12 +22,12 @@ you through all the various files and what they do. Then come back here. At that
 submitting a pull request to the github_app_updater project to have your app added
 to the list of default apps!
 
-Happy broad listening!
+Happy broad listening 🎧!
 
 ## Development Tips
-- Load your project into the "apps" folder from the beginning so you can see how it regularly behaves (while you code).
-- Whenever you want your main_5_mins.py (or some other file) to run, you can either:
-  - open a command line to the root of the example_project and run ```uv run python main_5_mins.py```
+- Load your project into the `syftbox/apps` datasite folder from the beginning so you can see how it regularly behaves (while you code).
+- Whenever you want your [main_5_mins.py](./main_5_mins.py) (or some other file) to run, you can either:
+  - open a command line to the root of the `example_project` and run ```uv run python main_5_mins.py```
   - delete the corresponding timestamp folder from ```example_project/script_timestamps```
 - Login with multiple datasites so you can see how multi-user interactions work (pro tip: build with a friend over zoom)
 - To help make syncing your code across multiple datasites easier in the development process, load your code into a Github repo and then add that repo to ```apps/github_app_updater/github_apps.csv``` for all except the datasite you're actively developing in. That way, if you hit save, commit, and push — it'll automatically propagate the code changes to all of the other datasites you're testing with (especially helpful if you're testing with a friend over zoom).
