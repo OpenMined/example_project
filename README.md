@@ -14,8 +14,9 @@ you through all the various files and what they do. Then come back here. At that
 5. Edit the main_5_mins.py file to add any additional functionality you want to run every 5 minutes.
 6. Edit the main_5_secs.py file to add any additional functionality you want to run every 5 seconds.
 7. Store your project in a GitHub repository and start sharing it with users! (likely for them to add to their github_app_updater/github_apps.csv file).
-8. (Optional) You might want to create a website (.html file) in <your datasite>/public which helps to raise awareness about your app for others to use.
-9. (Optional) If you think your app might be useful for everyone, you might consider
+8. Drag your folder into the "apps" folder to see it run! (you can also do this earlier if you want it to run during the dev process... which can be chaotic but also can be helpful).
+9. (Optional) You might want to create a website (.html file) in <your datasite>/public which helps to raise awareness about your app for others to use.
+10. (Optional) If you think your app might be useful for everyone, you might consider
 submitting a pull request to the github_app_updater project to have your app added
 to the list of default apps!
 
