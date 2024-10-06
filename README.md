@@ -7,20 +7,31 @@ Welcome to the Example Project tutorial! This project demonstrates several key f
 First, begin reading through the "Project Overview", and this will end up taking
 you through all the various files and what they do. Then come back here. At that point, you'll likely want to customize your project in the following way:
 
-1. Edit the pipeline_folders.txt file to define your desired folder structure and permissions.
-2. Edit the requirements.txt file to add any additional dependencies your project needs.
-3. Edit the main_1_day.py file to add any additional functionality you want to run once a day.
-4. Edit the main_1_hour.py file to add any additional functionality you want to run once an hour.
-5. Edit the main_5_mins.py file to add any additional functionality you want to run every 5 minutes.
-6. Edit the main_5_secs.py file to add any additional functionality you want to run every 5 seconds.
-7. Store your project in a GitHub repository and start sharing it with users! (likely for them to add to their github_app_updater/github_apps.csv file).
-8. Drag your folder into the "apps" folder to see it run! (you can also do this earlier if you want it to run during the dev process... which can be chaotic but also can be helpful).
-9. (Optional) You might want to create a website (.html file) in <your datasite>/public which helps to raise awareness about your app for others to use.
-10. (Optional) If you think your app might be useful for everyone, you might consider
+0. Change the name of the folder to be something other than "example_project". The app looks to this folder to know how to name itself.
+1. Create a github repo and put your example project into it. This is going to make syncing your code across multiple test datasites a little bit easier (see Development Tips for more here)
+2. Edit the pipeline_folders.txt file to define your desired folder structure and permissions.
+3. Edit the requirements.txt file to add any additional dependencies your project needs.
+4. Edit the main_1_day.py file to add any additional functionality you want to run once a day.
+5. Edit the main_1_hour.py file to add any additional functionality you want to run once an hour.
+6. Edit the main_5_mins.py file to add any additional functionality you want to run every 5 minutes.
+7. Edit the main_5_secs.py file to add any additional functionality you want to run every 5 seconds.
+8. Store your project in a GitHub repository and start sharing it with users! (likely for them to add to their github_app_updater/github_apps.csv file).
+9. Drag your folder into the "apps" folder to see it run! (you can also do this earlier if you want it to run during the dev process... which can be chaotic but also can be helpful).
+10. (Optional) You might want to create a website (.html file) in <your datasite>/public which helps to raise awareness about your app for others to use.
+11. (Optional) If you think your app might be useful for everyone, you might consider
 submitting a pull request to the github_app_updater project to have your app added
 to the list of default apps!
 
 Happy broad listening!
+
+## Development Tips
+- Load your project into the "apps" folder from the beginning so you can see how it regularly behaves (while you code).
+- Whenever you want your main_5_mins.py (or some other file) to run, you can either:
+  - open a command line to the root of the example_project and run ```uv run python main_5_mins.py```
+  - delete the corresponding timestamp folder from ```example_project/script_timestamps```
+- Login with multiple datasites so you can see how multi-user interactions work (pro tip: build with a friend over zoom)
+- To help make syncing your code across multiple datasites easier in the development process, load your code into a Github repo and then add that repo to ```apps/github_app_updater/github_apps.csv``` for all except the datasite you're actively developing in. That way, if you hit save, commit, and push — it'll automatically propagate the code changes to all of the other datasites you're testing with (especially helpful if you're testing with a friend over zoom).
+- If you want to speed up your dev cycles even more, you can launch your own test network locally (although I personally don't recommend this. I think it's best to test on the actual network if you can).
 
 ## Project Overview
 
