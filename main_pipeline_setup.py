@@ -61,7 +61,7 @@ for folder, perm_json in pipeline_folders:
     
     # Problem: How do we indicate that a folder has been created?
     # Solution: Create a dummy file in each folder
-    with open(folder_path / "dummy", "w") as f:
+    with open(folder_path / ".dummy", "w") as f:
         pass
     
     # Problem: How do we set the correct permissions for each folder?
