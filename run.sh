@@ -37,10 +37,14 @@ function should_run() {
 function update_dependencies() {
     curl -LsSf https://astral.sh/uv/install.sh | sh
     
+    #!/bin/sh
     if [ ! -d ".venv" ]; then
         echo "Virtual environment not found. Creating one..."
         uv venv .venv
         echo "Virtual environment created successfully."
+    else
+        echo "Virtual environment already exists."
+    fi
 
     uv pip install -r requirements.txt
 }
